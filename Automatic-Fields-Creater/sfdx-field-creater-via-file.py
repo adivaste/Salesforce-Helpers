@@ -105,16 +105,16 @@ def create_field_xml(label_input, field_type, details):
 def create_sample_file(file_path):
     """Create a sample input file with examples of all field types."""
     sample_content = """\
-Customer Name,Text,
-Order Amount,Number,10,2
-Price,Currency,8,2
-Start Date,Date,
-Created Date,DateTime,
-Is Active,Checkbox,
-Account Reference,Lookup,Contact
-Status,Picklist,New;In Progress;Closed
-Category,Picklist,global:MyGlobalValueSet
-"""
+                    Customer Name,Text,
+                    Order Amount,Number,10,2
+                    Price,Currency,8,2
+                    Start Date,Date,
+                    Created Date,DateTime,
+                    Is Active,Checkbox,
+                    Account Reference,Lookup,Contact
+                    Status,Picklist,New;In Progress;Closed
+                    Category,Picklist,global:MyGlobalValueSet
+                    """
     with open(file_path, "w") as sample_file:
         sample_file.write(sample_content)
     print(f"Sample file created: {file_path}")
